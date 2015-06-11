@@ -8,8 +8,8 @@ ng.module('smart-table')
         var predicate = attr.stSort;
         var getter = $parse(predicate);
         var index = 0;
-        var classAscent = attr.stClassAscent || stConfig.sort.ascentClass;
-        var classDescent = attr.stClassDescent || stConfig.sort.descentClass;
+        var classAscent = attr.stAscent || stConfig.sort.ascentClass;
+        var classDescent = attr.stDescent || stConfig.sort.descentClass;
         var stateClasses = [classAscent, classDescent];
         var sortDefault;
         var skipNatural = attr.stSkipNatural !== undefined ? attr.stSkipNatural : stConfig.sort.skipNatural;
